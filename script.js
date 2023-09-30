@@ -72,7 +72,7 @@ do {
 
 //----------------------------------------------------------------
 
-let numerosEnteros = null;
+/*let numerosEnteros = null;
 let sumaDeNumeros = [];
 
 while (numerosEnteros !== 0) {
@@ -94,8 +94,6 @@ function compare( a, b){
     }
 }
 
-
-
 let aux = 0;
 
 for (const e of sumaDeNumeros) {
@@ -109,7 +107,41 @@ let maximo = ordenados[ordenados.length -1];
 document.write(`<b>los numeros son :</b>${ordenados}</br>
 <b>el promedio de todos los numeros son :</b>${promedio}</br>
 <b>el minimo de todos los numeros es :</b>${minimo}</br>
-<b>el maximo de todos los numeros es :</b>${maximo}`);
+<b>el maximo de todos los numeros es :</b>${maximo}`);*/
+
+//--------------------------------------------------------------------------------
+
+
+/*let frase = prompt("ingrese una frase :");
+let separada = "";
+let letra = "";
+
+for( let i = 0 ; i < frase.length  ; i++){
+    
+         letra = frase.substring(i , i+1 );
+         
+           separada = separada.concat(" "+ letra);
+         
+    }
+
+console.log(separada);*/
+
+//-------------------------------------------------------------------------------------
+let nombre = prompt("ingrese un nombre");
+
+
+let reversa = (nombre)=>{
+    this.nombre=nombre;
+    let letra = "";
+    let aux = "";
+    for(let i = nombre.length ; i > 0; i--){
+        letra = nombre.substring(i - 1 , i );
+        aux = aux.concat(letra);
+    }
+    return console.log(aux);
+}
+
+reversa(nombre);
 
 
 
